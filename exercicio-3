@@ -1,0 +1,12 @@
+const prompt = require ('prompt-sync')();
+
+const Text1 = prompt('Digite sua idade:');
+const Num1 = Number(Text1);
+
+if (Num1 >= 10 && Num1 <= 14){
+    console.log('Categoria Infatil');
+}else if (Num1 >= 15 && Num1 <= 17){
+    console.log('Categoria Juvenil');
+}else if (Num1 >= 18 && Num1 <= 25){
+    console.log('Categoria Adulto');
+}

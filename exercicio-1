@@ -1,0 +1,18 @@
+const prompt = require ('prompt-sync')();
+
+
+const Text1 = prompt('Digite o primeiro número:');
+const Text2 = prompt('Digite o segundo número:');
+const Text3 = prompt('Digite o terceiro número:');
+
+const Num1 = Number(Text1);
+const Num2 = Number(Text2);
+const Num3 = Number(Text3);
+
+if(Num1 > Num2 && Num1 > Num3){
+    console.log(`${Num1}`);
+}else if(Num2 > Num1 && Num2 > Num3){
+    console.log(`${Num2}`);
+}else if(Num3 > Num1 && Num3 > Num2){
+    console.log(`${Num3}`);
+}
